@@ -24,11 +24,11 @@ public class Controller {
         db.setContent(content);
     }
 
-    public void txfTargetDragOver(DragEvent dragEvent) {
+    public void imgTargetDragOver(DragEvent dragEvent) {
         dragEvent.acceptTransferModes(TransferMode.ANY);
     }
 
-    public void txfTargetDragDropped(DragEvent dragEvent) {
+    public void imgTargetDragDropped(DragEvent dragEvent) {
         TextField refSource = (TextField) dragEvent.getGestureSource();
 
         if (!refSource.getText().equals("")){
@@ -36,12 +36,12 @@ public class Controller {
         }
     }
 
-    public void txfDragOver2(DragEvent dragEvent) {
+    public void cmbDragOver2(DragEvent dragEvent) {
         dragEvent.acceptTransferModes(TransferMode.ANY);
     }
 
 
-    public void txfTargetDragDropped2(DragEvent dragEvent) {
+    public void cmbTargetDragDropped2(DragEvent dragEvent) {
         TextField refSource = (TextField) dragEvent.getGestureSource();
         ComboBox refTarget = (ComboBox) dragEvent.getGestureTarget();
 
